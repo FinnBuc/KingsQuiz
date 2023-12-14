@@ -3,12 +3,10 @@ public class Dynastie {
     private final String name;
     private King founder;
     private King lastKing;
-    private final int numberKings;
-    private King[] kings = new King[getNumberKings()];
+    private King[] kings;
 
-    public Dynastie(String name, int numberKings) {
+    public Dynastie(String name) {
         this.name = name;
-        this.numberKings = numberKings;
     }
 
     public void setFounder(King founder) {
@@ -35,11 +33,11 @@ public class Dynastie {
         return lastKing;
     }
 
-    public int getNumberKings() {
-        return numberKings;
-    }
-
     public King[] getKings() {
         return kings;
+    }
+
+    public int getKingsLength() {
+        return kings.length;
     }
 }

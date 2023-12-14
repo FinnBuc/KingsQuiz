@@ -1,0 +1,9 @@
+public enum QuestionType {
+    PREDECESSOR,
+    SUCCESOR,
+    KINGBYYEAR,
+    KINGINDYNASTIE,
+    RELATIONBETWEENKINGS
+
+
+}

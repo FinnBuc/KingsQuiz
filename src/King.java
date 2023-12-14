@@ -9,11 +9,11 @@ public class King {
     private int deductionYear;
     private int deathYear;
     private Dynastie dynastie;
-
+    private String relationToPredecessor;
     private String funFact;
     private String rome;
 
-    public King(int id, String name, int birthYear, int coronationYear, int deductionYear, int deathYear, Dynastie dynastie, String funFact) {
+    public King(int id, String name, int birthYear, int coronationYear, int deductionYear, int deathYear, Dynastie dynastie, String relationToPredecessor, String funFact) {
         this.id = id;
         this.name = name;
         this.nickname = nickname;
@@ -22,11 +22,16 @@ public class King {
         this.deductionYear = deductionYear;
         this.deathYear = deathYear;
         this.dynastie = dynastie;
+        this.relationToPredecessor = relationToPredecessor;
         this.funFact = funFact;
         this.rome = rome;
     }
     public void setNickname(String name) {
         this.nickname = name;
+    }
+
+    public String getRelationToPredecessor() {
+        return relationToPredecessor;
     }
 
     public int getId() {
