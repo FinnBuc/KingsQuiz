@@ -10,7 +10,7 @@ public class Main {
         int k = 0;
 
         for (int i=0; i < 10; i++){
-            Question question = new Question(QuestionType.KINGBYYEAR, archiv);
+            Question question = new Question(QuestionType.SUCCESOR, archiv);
             System.out.println(question.getText());
             String s = scanner.next();
             if (Objects.equals(s, question.getAnswer())) {
